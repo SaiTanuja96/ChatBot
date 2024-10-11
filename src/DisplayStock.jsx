@@ -41,7 +41,7 @@ const DisplayStock = ({ exchange, showStocks }) => {
 
                         {data.map((item) => {
 
-                            if (exchange === item.code) {
+                            if (exchange === item.stockExchange) {
 
                                 return item.topStocks.map((listItem) => (
                                     <>
@@ -60,6 +60,8 @@ const DisplayStock = ({ exchange, showStocks }) => {
                         })}
 
                     </ul>
+                    <h6 className='selectedOption'>{selectedStock}</h6>
+
                 </div>}
                 {showPrice && <div style={{ marginTop: '5rem' }}>
                     <ul class="stocks list-group container">

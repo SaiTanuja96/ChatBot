@@ -11,7 +11,7 @@ const StockExchange = () => {
     const [showStocks, setShowStocks] = useState(false);
 
     const handleExchangeSelect = (item) => {
-        console.log(item.code); setExchange(item.code); setShowStocks(true)
+        console.log(item.code); setExchange(item.stockExchange); setShowStocks(true)
     };
 
 
@@ -26,6 +26,7 @@ const StockExchange = () => {
                     })}
                 </ul>
             </div>
+            <h6 className='selectedOption'>{exchange}</h6>
             <div>
 
                 <DisplayStocks exchange={exchange} showStocks={showStocks} />

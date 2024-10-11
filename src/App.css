@@ -47,3 +47,10 @@
 .seperator{
   margin-top: 3rem;
 }
+.selectedOption{
+  color: black;
+  background-color:aliceblue;
+  margin-left: auto;
+  width: fit-content;
+  margin-top: 2rem;
+}
